@@ -1,0 +1,154 @@
+.header {
+    background-color: aqua;
+    display: flex;
+}
+
+.header img {
+    width: 50px;
+}
+
+.main {
+    background-color: aquamarine;
+    display: flex;
+    gap: 15px;
+}
+
+.article1 {
+    background-color: beige;
+    display: flex;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.article1 img {
+    width: 30px;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.section2 {
+    background-color: beige;
+    margin: 20px;
+    border-radius: 30px;
+    display: flex;
+}
+
+.article2 {
+    margin: 30px;
+}
+
+.article2 h1 {
+    text-align: center;
+}
+
+.article2 h4 {
+    text-align: center;
+}
+
+.footer {
+    background-color: beige;
+    display: flex;
+}
+
+.footer h1 {
+    margin-left: 15%;
+}
+
+.footer img {
+    width: 50px;
+}
+
+.div__footer{
+    display: flex;
+}
+
+.hover:hover {
+    background-color: aqua;
+}
+
+@media (max-width:900px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0%;
+        margin: 0px 20px;
+    }
+
+    .article1 figure{
+        margin: 8px 0px;
+    }
+
+    .article1 img {
+        padding-left: 0%;
+    }
+
+    .article1 h2{
+        margin: 0%;
+    }
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgPokedex{
+        position: absolute;
+        justify-content: center;
+        z-index: 1;
+        top: 18%;
+    }
+
+    .imgPokedex img{
+        height: 250px;
+        align-items: center;
+    }
+
+    .section2{
+        margin-top: 180px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .article2{
+        margin: 0%;
+        padding: 0px 20%;
+    }
+
+    .div__lista{
+        display: flex;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer h1{
+        margin: 0%;
+    }
+
+    .div__footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
