@@ -23,8 +23,6 @@ export const getPokemons = async () => {
                   };
                   listPokemons.push(newPokemon);
                   if (response.data.results.length === i + 1) {
-                    // renderPokemons(listPokemons);
-                    console.log(listPokemons);
                     return listPokemons;
                   }
                 } catch (error) {
