@@ -1,10 +1,15 @@
 import "../styles/style.scss"
+import printPokemons from "./UI/printPokemons";
+import validarPokemon from "./UI/validarPokemons";
 import { getPokemons } from "./services/getPokemones.js"
 
-// const selection = document.querySelector('bulbasaur');
+const main = document.getElementById('main');
 
-// getPokemons();
+// const pokemonesPrincipales = ['bulbasaur', 'metapod', 'charmander', 'charizard'];
 
-// selection.addEventListener('click', () => {
-//     console.log('hice click')
-// })
+document.addEventListener('DOMContentLoaded', () => {
+
+    const selectionPokemons = document.querySelectorAll('.select');
+    validarPokemon(selectionPokemons, main);
+})
+
