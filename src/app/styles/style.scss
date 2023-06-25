@@ -3,6 +3,30 @@
 .header {
     background-color: aqua;
     display: flex;
+    justify-content: space-between;
+
+    &__container {
+        display: flex;
+    }
+
+    &__buscador {
+        padding: 30px 60px;
+    }
+
+    &__input {
+        padding: 2px 6px;
+        border: none;
+        border-radius: 6px;
+    }
+}
+
+.btn-submit{
+    padding: 2px 6px;
+    background-color: #e58080;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .header img {
@@ -30,10 +54,11 @@
     padding-left: 40px;
 }
 
-.imgPokedex{
+.imgPokedex {
     height: 450px;
     width: auto;
-    & img{
+
+    & img {
         height: 100%;
         width: auto;
     }
@@ -46,13 +71,15 @@
     display: flex;
 }
 
-.div__lista{
+.div__lista {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     margin: 30px;
-    & span, h4 {
+
+    & span,
+    h4 {
         text-align: center;
         align-items: center;
         margin: 0;
@@ -73,7 +100,7 @@
     width: 50px;
 }
 
-.div__footer{
+.div__footer {
     display: flex;
 }
 
@@ -102,7 +129,7 @@
         margin: 0px 20px;
     }
 
-    .article1 figure{
+    .article1 figure {
         margin: 8px 0px;
     }
 
@@ -110,55 +137,55 @@
         padding-left: 0%;
     }
 
-    .article1 h2{
+    .article1 h2 {
         margin: 0%;
     }
 
-    .section1{
+    .section1 {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .imgPokedex{
+    .imgPokedex {
         position: absolute;
         justify-content: center;
         z-index: 1;
         top: 18%;
     }
 
-    .imgPokedex img{
+    .imgPokedex img {
         height: 250px;
         align-items: center;
     }
 
-    .section2{
+    .section2 {
         margin-top: 180px;
         display: flex;
         justify-content: center;
         flex-direction: column;
     }
 
-    .article2{
+    .article2 {
         margin: 0%;
         padding: 0px 20%;
     }
 
-    .div__lista{
+    .div__lista {
         display: flex;
     }
 
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .footer h1{
+    .footer h1 {
         margin: 0%;
     }
 
-    .div__footer{
+    .div__footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
