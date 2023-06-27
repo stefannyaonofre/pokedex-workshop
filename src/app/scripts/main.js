@@ -24,7 +24,7 @@ const nextBtn = document.getElementById("next-btn");
       currentPage++;
       getListPokemons(currentPage);
     }
-    console.log()
+    
   });
 
 
