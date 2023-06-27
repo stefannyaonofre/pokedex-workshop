@@ -13,3 +13,20 @@ document.addEventListener('DOMContentLoaded', () => {
     validarPokemon(selectionPokemons, main);
 })
 
+
+
+const nextBtn = document.getElementById("next-btn");
+
+  nextBtn.disabled = pokemones.length < resultsPerPage;
+
+  nextBtn.addEventListener("click", () => {
+    if (pokemones.length === resultsPerPage) {
+      currentPage++;
+      getListPokemons(currentPage);
+    }
+    console.log()
+  });
+
+
+getListPokemons();
+

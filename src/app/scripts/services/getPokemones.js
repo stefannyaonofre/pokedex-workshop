@@ -35,3 +35,5 @@ export const getPokemons = async () => {
       console.log(error);
     }
   };
+
+  
