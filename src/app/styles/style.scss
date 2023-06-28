@@ -1,7 +1,7 @@
 @import './variables.scss';
 
 .header {
-    background-color: aqua;
+    background-color: #999999;
     display: flex;
     justify-content: space-between;
 
@@ -34,13 +34,23 @@
 }
 
 .main {
-    background-color: aquamarine;
+    background-color: #eee;
     display: flex;
     gap: 15px;
 }
 
+#form{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.input-search{
+    padding: 2px 6px;
+    border: none;
+    border-radius: 6px;
+}
 .article1 {
-    background-color: beige;
+    background-color: rgb(153, 153, 152);
     display: flex;
     border-radius: 10px;
     margin-left: 20%;
@@ -65,7 +75,7 @@
 }
 
 .section2 {
-    background-color: beige;
+    background-color: #999999;
     margin: 20px;
     border-radius: 30px;
     display: flex;
@@ -88,7 +98,7 @@
 }
 
 .footer {
-    background-color: beige;
+    background-color: #999999;
     display: flex;
 }
 
@@ -105,8 +115,30 @@
 }
 
 .hover:hover {
-    background-color: aqua;
+    background-color: #fff;
 }
+
+.pokemones-container {
+    padding-top: 0.5rem;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-submit{
+    padding: 2px 6px;
+    background-color: #e58080;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    
+  }
 
 @media (max-width:900px) {
     .header {
